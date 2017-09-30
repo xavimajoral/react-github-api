@@ -27,11 +27,9 @@ class UserDetail extends Component {
 
   renderUserDetails() {
     const { users } = this.props.users;
-    const userId = parseInt(this.props.match.params.id);
+    const userId = parseInt(this.props.match.params.id, 10);
     const singleUser = users.find((user) => {
-      if (user.id === userId) {
-        return user
-      }
+        return user.id === userId
     });
     if (singleUser === undefined) {
       return this.renderNoUser();

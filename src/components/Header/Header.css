@@ -14,3 +14,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.App-header h1, .App-header h3 {
+    margin: 10px 0;
+}
